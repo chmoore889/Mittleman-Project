@@ -2,8 +2,8 @@ clear;
 close all;
 
 %% Data import
-referenceFile = "ref_Samp2.txt";
-sampleFile = "samp_Samp2.txt";
+referenceFile = "samples/ref_Samp2.txt";
+sampleFile = "samples/samp_Samp2.txt";
 
 [refTimePs, refTHz] = importTHzFile(referenceFile);
 [sampleTimePs, sampleTHz] = importTHzFile(sampleFile);
