@@ -32,7 +32,7 @@ pulseDelayPs = pulseDelayPs + startOffsetPs;%Compensate if start times are not s
 disp("Loaded time traces");
 clearvars -except timePeriodPs refTHz sampleTHz pulseDelayPs;
 %% Fourier Transform
-frequencyRange = [0.25e12 1.8e12];
+frequencyRange = [0.25e12 1.4e12];
 [refFrequencies, refTransform] = freqeuncyTransform(timePeriodPs, refTHz);
 [sampleFrequencies, sampleTransform] = freqeuncyTransform(timePeriodPs, sampleTHz);
 
